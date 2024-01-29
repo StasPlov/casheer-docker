@@ -16,7 +16,8 @@ services:
     restart: always
 
   wordpress:
-    image: wordpress:php8.2-fpm-alpine
+    build:
+      context: .
     container_name: casheer.com_wordpress
     depends_on:
       - db

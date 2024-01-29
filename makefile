@@ -4,6 +4,7 @@ init:
 	make drop-cache
 	
 drop-cache:
+	chmod -R 777 wordpress/
 	chmod -R 777 var/
 
 drop-db:
