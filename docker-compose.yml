@@ -30,17 +30,6 @@ services:
       - ./var/log/nginx/:/var/log/nginx/
     restart: always
 
-  #php:
-  #  container_name: casheer.com_php_8.2
-  #  image: webdevops/php:8.2
-  #  working_dir: /var/www/
-  #  environment:
-  #    - TZ=${COMPOSE_TIMEZONE}
-  #  volumes:
-  #    - ./config/docker/php/php.ini:/usr/local/etc/php/conf.d/php.ini
-  #    - ./wordpress:/var/www/
-  #  restart: always
-
   wordpress:
     image: wordpress:php8.2-fpm-alpine
     container_name: casheer.com_wordpress
